@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Outfit, Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import {
   SITE_NAME,
@@ -12,16 +12,16 @@ import HieloEnCasaChatWidget from "@/components/HieloEnCasaChatWidget";
 import SmoothScroll from "@/components/SmoothScroll";
 import { JsonLd } from "@/components/Breadcrumbs";
 
-const outfit = Outfit({
-  subsets: ["latin"],
+const outfit = localFont({
+  src: "../fonts/Outfit-Variable-latin.woff2",
   variable: "--font-outfit",
-  weight: ["500", "600", "700", "800"],
+  weight: "500 800",
   display: "swap",
 });
-const inter = Inter({
-  subsets: ["latin"],
+const inter = localFont({
+  src: "../fonts/Inter-Variable-latin.woff2",
   variable: "--font-inter",
-  weight: ["400", "500", "600", "700"],
+  weight: "400 700",
   display: "swap",
 });
 
