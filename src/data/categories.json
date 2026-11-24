@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "resenas-maquinas-de-hielo",
+    "name": "Reseñas de Máquinas de Hielo de Sobremesa",
+    "shortName": "Reseñas de Modelos",
+    "icon": "cube",
+    "description": "Análisis individuales a fondo de las máquinas de hielo de sobremesa más vendidas en Amazon Estados Unidos (GE Profile Opal 2.0, Frigidaire Gallery, EUHOMY, Silonn, IGLOO, Luma Comfort y NewAir), evaluando precio, capacidad diaria, tamaño y nivel de ruido."
+  },
+  {
+    "slug": "comparativas-maquinas-de-hielo",
+    "name": "Comparativas de Máquinas de Hielo (VS)",
+    "shortName": "Comparativas VS",
+    "icon": "scale",
+    "description": "Duelos cara a cara entre modelos de cubitos (bala y cubo cuadrado cristalino) y de hielo tipo nugget masticable según precio en USD, producción en lb/24h, altura bajo gabinete y decibelios."
+  },
+  {
+    "slug": "mejores-maquinas-hielo-nugget",
+    "name": "Mejores Máquinas de Hielo Tipo Nugget",
+    "shortName": "Hielo Tipo Nugget",
+    "icon": "sparkles",
+    "description": "Rankings de compra en Amazon EE. UU. para amantes del hielo tipo nugget, pebble o sonic ice crujiente y masticable: modelos con tanque lateral, autolimpieza UV, Wi‑Fi y opciones económicas."
+  },
+  {
+    "slug": "mejores-maquinas-cubitos-de-hielo",
+    "name": "Mejores Máquinas de Cubitos y Cubo Cristalino",
+    "shortName": "Máquinas de Cubitos",
+    "icon": "ice",
+    "description": "Selecciones de compra de máquinas de cubitos tipo bala rápidos en 6 minutos y máquinas de cubos cuadrados cristalinos gourmet que no aguan cócteles, refrescos ni whisky."
+  },
+  {
+    "slug": "maquinas-por-uso-presupuesto-y-espacio",
+    "name": "Máquinas por Uso Diario, Reuniones y Presupuesto",
+    "shortName": "Por Uso y Precio",
+    "icon": "tag",
+    "description": "Guías de compra según escenario y bolsillo en Amazon EE. UU.: máquinas silenciosas para uso diario, modelos de 33 a 48 lb/día para reuniones en casa, cocinas pequeñas y rangos desde menos de US$80."
+  },
+  {
+    "slug": "cubitos-vs-hielo-nugget-y-tipos",
+    "name": "Cubitos vs Hielo Nugget y Tipos de Hielo",
+    "shortName": "Cubitos vs Nugget",
+    "icon": "layers",
+    "description": "Guía completa sobre las diferencias reales entre el hielo tipo nugget aireado masticable, los cubitos huecos tipo bala y los cubos cuadrados transparentes según bebida, dilución y textura."
+  },
+  {
+    "slug": "capacidad-tamano-y-ubicacion-cocina",
+    "name": "Capacidad (lb/24h), Tamaño y Espacio en Cocina",
+    "shortName": "Capacidad y Tamaño",
+    "icon": "ruler",
+    "description": "Cómo calcular cuántas libras de hielo necesitas al día, medidas exactas para encajar bajo gabinetes de 18 pulgadas en EE. UU., holgura de ventilación del compresor y peso en encimera."
+  },
+  {
+    "slug": "ruido-consumo-electrico-y-funcionamiento",
+    "name": "Nivel de Ruido (dB), Consumo y Funcionamiento",
+    "shortName": "Ruido dB y Consumo",
+    "icon": "volume",
+    "description": "Cuántos decibelios emite una máquina de hielo en cocina abierta u oficina, cómo reducir vibraciones, consumo real en watts/kWh al mes y funcionamiento del sensor infrarrojo y reciclaje de agua."
+  },
+  {
+    "slug": "limpieza-descalcificacion-y-agua",
+    "name": "Limpieza, Descalcificación y Tipo de Agua",
+    "shortName": "Limpieza y Agua",
+    "icon": "droplet",
+    "description": "Protocolos paso a paso para limpiar y descalcificar máquinas de cubitos y nugget sin dañar el níquel, prevención de sarro y moho, y qué agua usar (filtrada, embotellada, ósmosis o grifo)."
+  },
+  {
+    "slug": "solucion-de-problemas-y-reparacion",
+    "name": "Solución de Problemas y Fallas Frecuentes",
+    "shortName": "Solución de Fallas",
+    "icon": "wrench",
+    "description": "Diagnóstico práctico cuando aparece el aviso ADD WATER o ICE FULL por error, chirridos agudos en máquinas nugget, cubitos demasiado finos, fugas en el drenaje o compresor que no enfría."
+  },
+  {
+    "slug": "uso-diario-bebidas-y-reuniones-en-casa",
+    "name": "Uso Diario, Iced Coffee y Reuniones en Casa",
+    "shortName": "Uso Diario y Fiestas",
+    "icon": "party",
+    "description": "Cómo aprovechar tu máquina cada mañana para café frío y termos térmicos de 40 oz, y cómo planificar y almacenar lotes de hielo para fiestas, cenas y barbacoas de 10 a 40 invitados."
+  },
+  {
+    "slug": "conservacion-hielo-y-accesorios",
+    "name": "Conservación del Hielo, Filtros y Accesorios",
+    "shortName": "Conservación y Kits",
+    "icon": "box",
+    "description": "Trucos para guardar hielo nugget o cubitos en el congelador sin que se peguen en bloque, contenedores herméticos, bolsas térmicas, tanques laterales, mangueras de drenaje e invernaje."
+  }
+]

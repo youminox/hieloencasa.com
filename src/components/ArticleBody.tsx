@@ -1,0 +1,161 @@
+import type { Block } from "@/lib/content";
+import Inline, { slugify } from "./Inline";
+import OpenChatButton from "./OpenChatButton";
+
+const CALLOUT: Record<string, { label: string; cls: string; icon: string }> = {
+  etiqueta: {
+    label: "Ficha Comparativa: Precio · Capacidad · Tamaño · Nivel de Ruido",
+    cls: "border-fxblue/30 bg-fxsky",
+    icon: "🧊",
+  },
+  fabricante: {
+    label: "Guía Práctica de Cocina y Rendimiento Real",
+    cls: "border-teal-300/60 bg-teal-50/70",
+    icon: "⚡",
+  },
+  aviso: {
+    label: "Punto clave a revisar antes de comprar en Amazon EE. UU.",
+    cls: "border-orange-300/60 bg-orange-50",
+    icon: "⚠️",
+  },
+  tip: {
+    label: "Truco de ahorro y conservación para uso diario y reuniones",
+    cls: "border-fxlime/50 bg-fxcream/60",
+    icon: "💡",
+  },
+};
+
+export default function ArticleBody({
+  blocks,
+  source,
+}: {
+  blocks: Block[];
+  source: string;
+}) {
+  return (
+    <div className="prose-fx">
+      {blocks.map((b, i) => {
+        switch (b.type) {
+          case "p":
+            return (
+              <p key={i}>
+                <Inline text={b.text} source={source} />
+              </p>
+            );
+          case "h2":
+            return (
+              <h2 key={i} id={slugify(b.text)}>
+                <Inline text={b.text} source={source} />
+              </h2>
+            );
+          case "h3":
+            return (
+              <h3 key={i}>
+                <Inline text={b.text} source={source} />
+              </h3>
+            );
+          case "ul":
+            return (
+              <ul key={i}>
+                {b.items.map((it, j) => (
+                  <li key={j}>
+                    <Inline text={it} source={source} />
+                  </li>
+                ))}
+              </ul>
+            );
+          case "ol":
+            return (
+              <ol key={i}>
+                {b.items.map((it, j) => (
+                  <li key={j}>
+                    <Inline text={it} source={source} />
+                  </li>
+                ))}
+              </ol>
+            );
+          case "table":
+            return (
+              <figure
+                key={i}
+                className="my-7 overflow-x-auto rounded-2xl border border-[var(--line)]"
+              >
+                <table>
+                  <thead>
+                    <tr>
+                      {b.headers.map((h, j) => (
+                        <th key={j}>{h}</th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {b.rows.map((r, j) => (
+                      <tr key={j}>
+                        {r.map((c, k) => (
+                          <td key={k}>
+                            <Inline text={String(c)} source={source} />
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+                {b.caption && (
+                  <figcaption className="px-4 py-2 text-xs text-[var(--muted)]">
+                    {b.caption}
+                  </figcaption>
+                )}
+              </figure>
+            );
+          case "callout": {
+            const c = CALLOUT[b.variant] || CALLOUT.tip;
+            return (
+              <aside key={i} className={`my-7 rounded-2xl border p-5 ${c.cls}`}>
+                <p className="!mb-1 text-xs font-bold uppercase tracking-wider text-[var(--muted)]">
+                  <span aria-hidden>{c.icon}</span> {c.label}
+                </p>
+                {b.title && (
+                  <p className="!mb-1 font-display text-lg font-bold text-fxink">
+                    {b.title}
+                  </p>
+                )}
+                <p className="!mb-0 whitespace-pre-line">
+                  <Inline text={b.text} source={source} />
+                </p>
+              </aside>
+            );
+          }
+          case "steps":
+            return (
+              <ol key={i} className="!gap-4">
+                {b.items.map((s, j) => (
+                  <li key={j}>
+                    <strong>{s.name}.</strong>{" "}
+                    <Inline text={s.text} source={source} />
+                  </li>
+                ))}
+              </ol>
+            );
+          case "cta":
+            return (
+              <div
+                key={i}
+                className="my-7 flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-2xl border border-fxblue/30 bg-gradient-to-r from-fxsky to-white p-5"
+              >
+                <p className="!mb-0 font-display text-base font-bold text-fxink">
+                  {b.text}
+                </p>
+                <OpenChatButton
+                  label="Preguntar al Asesor IA"
+                  prompt={`Estoy leyendo sobre ${source} y quiero saber qué máquina de hielo de sobremesa (cubitos o nugget) me conviene en Amazon EE. UU. según precio, capacidad, tamaño y nivel de ruido para uso diario o reuniones en casa.`}
+                  className="btn btn-buy shine !px-4 !py-2.5 text-xs shrink-0"
+                />
+              </div>
+            );
+          default:
+            return null;
+        }
+      })}
+    </div>
+  );
+}
