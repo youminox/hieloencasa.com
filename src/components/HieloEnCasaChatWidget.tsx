@@ -38,8 +38,6 @@ export interface ChatAmazonProductCard {
   badge: string;
   title: string;
   subtitle: string;
-  rating: string;
-  reviewsCount: string;
   urlUS: string;
   urlES: string;
 }
@@ -484,23 +482,6 @@ export default function HieloEnCasaChatWidget() {
                 {m.role === "assistant" &&
                   m.recommendedProducts &&
                   m.recommendedProducts.length > 0 && (
-                    <div className="space-y-2 pl-1">
-                      {m.recommendedProducts.map((prod) => {
-                        const prodUrl =
-                          region === "ES" ? prod.urlES : prod.urlUS;
-                        return (
-                          <div
-                            key={prod.id}
-                            className="rounded-2xl border-2 border-sky-400/70 bg-gradient-to-br from-[#ffffff] to-[#e0f2fe]/70 p-3 shadow-sm"
-                          >
-                            <div className="flex items-center justify-between gap-2">
-                              <span className="rounded-full bg-sky-500/20 px-2 py-0.5 text-[10px] font-extrabold text-sky-950">
-                                {prod.badge}
-                              </span>
-                              <span className="text-[11px] font-bold text-amber-700">
-                                ★ {prod.rating} ({prod.reviewsCount})
-                              </span>
-                            </div>
                             <p className="mt-1 font-display text-xs font-extrabold text-slate-900 leading-snug">
                               {prod.title}
                             </p>

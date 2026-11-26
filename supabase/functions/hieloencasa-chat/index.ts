@@ -61,8 +61,6 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
       "GE Profile Opal 2.0 Countertop Nugget Ice Maker con Side Tank (38 lb/24h · Wi‑Fi SmartHQ)",
     subtitle:
       "Hielo nugget masticable estilo restaurante en 10 min, tanque lateral de 0.75 gal, 44–46 dB y altura de 16.5\" bajo gabinete.",
-    rating: "4.6",
-    reviewsCount: "21.400+",
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("GE Profile Opal 2.0 Countertop Nugget Ice Maker with Side Tank")}&tag=${AMAZON_TAG_US}`,
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("maquina de hielo nugget picado masticable sobremesa")}&tag=${AMAZON_TAG_ES}`,
   },
@@ -73,20 +71,16 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
       "Frigidaire Gallery Countertop Crunchy Chewable Nugget Ice Maker (44 lb/24h · EFIC235)",
     subtitle:
       "Hasta 44 lb/24h de hielo nugget crujiente a mitad de precio que la gama lujo, ideal para uso diario familiar y reuniones.",
-    rating: "4.5",
-    reviewsCount: "6.800+",
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("Frigidaire Gallery Countertop Crunchy Chewable Nugget Ice Maker 44 lbs")}&tag=${AMAZON_TAG_US}`,
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("Frigidaire maquina de hielo nugget sobremesa acero inoxidable")}&tag=${AMAZON_TAG_ES}`,
   },
   "euhomy-nugget-34lb-compact": {
     id: "euhomy-nugget-34lb-compact",
-    badge: "💎 #1 Nugget Compacta Económica (<US$270 · 13\" Alto)",
+    badge: "💎 #1 Nugget Compacta Económica",
     title:
       "EUHOMY Countertop Nugget Ice Maker (34–40 lb/24h · Ultracompacta con Autolimpieza)",
     subtitle:
       "Solo 9.6\"×11.6\"×13\", silenciosa (42–45 dB) y con autolimpieza de 1 botón para apartamentos, iced coffee y termos de 40 oz.",
-    rating: "4.6",
-    reviewsCount: "9.200+",
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("EUHOMY Nugget Ice Maker Countertop Chewable Pebble Ice Self Cleaning")}&tag=${AMAZON_TAG_US}`,
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("EUHOMY maquina de hielo nugget sobremesa autolimpieza")}&tag=${AMAZON_TAG_ES}`,
   },
@@ -97,20 +91,16 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
       "Silonn Chewable Nugget Ice Maker Countertop (33 lb/24h · Autolimpieza y Bajo Ruido)",
     subtitle:
       "Ocupa menos ancho que una cafetera, 43–46 dB y flujo continuo de pepitas masticables desde los 8 minutos.",
-    rating: "4.5",
-    reviewsCount: "5.400+",
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("Silonn Nugget Ice Maker Countertop Chewable Pebble Ice Machine 33lbs")}&tag=${AMAZON_TAG_US}`,
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("Silonn maquina de hielo nugget compacta sobremesa")}&tag=${AMAZON_TAG_ES}`,
   },
   "silonn-slim01-bullet-26lb": {
     id: "silonn-slim01-bullet-26lb",
-    badge: "🔥 #1 Cubitos Económica en Amazon EE. UU. (<US$90 · 6 Min)",
+    badge: "🔥 #1 Cubitos Económica en Amazon EE. UU.",
     title:
       "Silonn Countertop Bullet Ice Maker SLIM01 (26 lb/24h · 9 Cubitos en 6 Min y <40 dB)",
     subtitle:
       "2 tamaños de cubito (S y L), ultrasilenciosa (35–41 dB), asa portátil y autolimpieza automática para el día a día.",
-    rating: "4.6",
-    reviewsCount: "34.800+",
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("Silonn Ice Makers Countertop 9 Cubes Ready in 6 Mins 26lbs Per Day")}&tag=${AMAZON_TAG_US}`,
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("Silonn maquina de cubitos de hielo sobremesa 12kg 6 minutos")}&tag=${AMAZON_TAG_ES}`,
   },
@@ -121,8 +111,6 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
       "EUHOMY Countertop Ice Maker Machine 26 lb/24h con Asa Portátil y Autolimpieza",
     subtitle:
       "Pesa menos de 14 lb, entrega 9 cubitos cada 6–8 min y se lleva sin esfuerzo de la cocina a la terraza o camper.",
-    rating: "4.6",
-    reviewsCount: "19.500+",
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("EUHOMY Ice Maker Machine Countertop 26lbs in 24Hrs 9 Cubes Ready in 6 Mins")}&tag=${AMAZON_TAG_US}`,
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("EUHOMY maquina de hacer hielo portatil sobremesa 12kg")}&tag=${AMAZON_TAG_ES}`,
   },
@@ -133,8 +121,6 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
       "EUHOMY 40–45 lb/Day Clear Square Ice Maker Countertop con Pantalla LCD y Temporizador",
     subtitle:
       "Placas de 24 cubos cuadrados transparentes y macizos por tanda que tardan el triple en derretirse en fiestas y whisky.",
-    rating: "4.6",
-    reviewsCount: "11.300+",
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("EUHOMY 40Lbs Clear Ice Maker Countertop 24 Ice Cubes Ready LCD Display")}&tag=${AMAZON_TAG_US}`,
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("EUHOMY maquina de hielo cubos cuadrados transparentes 18kg LCD")}&tag=${AMAZON_TAG_ES}`,
   },
@@ -145,8 +131,6 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
       "Luma Comfort IM200SS / NewAir ClearIce40 Crystal Clear Ice Cube Maker",
     subtitle:
       "Cubos cristalinos individuales de grado restaurante que enfrían destilados y cócteles sin aguarlos.",
-    rating: "4.5",
-    reviewsCount: "4.900+",
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("Luma Comfort Clear Ice Cube Maker Countertop Machine Stainless Steel")}&tag=${AMAZON_TAG_US}`,
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("maquina de hielo transparente cristalino gourmet cocteles")}&tag=${AMAZON_TAG_ES}`,
   },
@@ -157,8 +141,6 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
       "Affresh Ice Machine Cleaner / Kit Oficial GE Profile Opal Descalcificador",
     subtitle:
       "Elimina sarro y chirridos en máquinas de cubitos y nugget cuidando el recubrimiento de níquel sin olor a vinagre.",
-    rating: "4.8",
-    reviewsCount: "18.600+",
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("Affresh Ice Machine Cleaner Nickel Safe Countertop Nugget Descaler")}&tag=${AMAZON_TAG_US}`,
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("descalcificador limpiador maquina de hielo sobremesa acido citrico")}&tag=${AMAZON_TAG_ES}`,
   },
@@ -169,8 +151,6 @@ const AMAZON_PRODUCTS: Record<string, AmazonProductCard> = {
       "Contenedor Hermético de Hielo para Congelador con Tapa, Pinzas y Pala + Bolsas",
     subtitle:
       "Permite acumular de 6 a 10 lb de hielo desde el día anterior a tu fiesta sin olores ni derrames.",
-    rating: "4.7",
-    reviewsCount: "12.900+",
     urlUS: `https://www.amazon.com/s?k=${encodeURIComponent("Ice Cube Bin for Freezer with Lid and Scoop Airtight Ice Storage Container")}&tag=${AMAZON_TAG_US}`,
     urlES: `https://www.amazon.es/s?k=${encodeURIComponent("contenedor hermetico para guardar hielo congelador con pala")}&tag=${AMAZON_TAG_ES}`,
   },

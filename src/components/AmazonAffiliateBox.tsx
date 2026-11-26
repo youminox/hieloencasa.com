@@ -104,16 +104,6 @@ export default function AmazonAffiliateBox({
         aria-label="Recomendación destacada de máquina de hielo de sobremesa y precio en Amazon"
         className="my-8 rounded-3xl border-2 border-[#0284c7]/40 bg-gradient-to-br from-[#f0f7fc] via-white to-[#e0f2fe]/60 p-5 sm:p-7 shadow-[0_20px_50px_-28px_rgba(2,132,199,0.3)]"
       >
-        <div className="flex flex-wrap items-center justify-between gap-2 pb-4 border-b border-[var(--line)]">
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-[#07111e] px-3 py-1 text-xs font-extrabold text-[#bae6fd]">
-              {primaryProduct.badge}
-            </span>
-            <span className="inline-flex items-center gap-1 rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-bold text-amber-900">
-              ★★★★★ {primaryProduct.rating}/5 ({primaryProduct.reviewsCount}{" "}
-              reseñas)
-            </span>
-          </div>
           <div className="inline-flex items-center gap-1 rounded-full bg-white border border-[var(--line)] px-2.5 py-1 text-[11px] font-bold text-slate-600">
             <span>Tienda Amazon:</span>
             <button
@@ -267,29 +257,6 @@ export default function AmazonAffiliateBox({
           </div>
         </div>
 
-        <div className="mt-5 grid gap-5 md:grid-cols-2">
-          {contenders.map((prod, idx) => {
-            const url = buildAmazonUrl(prod, region);
-            return (
-              <div
-                key={prod.id + idx}
-                className={`flex flex-col justify-between rounded-2xl p-5 border ${
-                  idx === 0
-                    ? "border-sky-400 bg-white/10"
-                    : "border-white/15 bg-white/[0.05]"
-                }`}
-              >
-                <div>
-                  <div className="flex items-center justify-between gap-2">
-                    <span className="rounded-full bg-amber-400/20 px-3 py-0.5 text-xs font-extrabold text-amber-300">
-                      {idx === 0
-                        ? "🏆 Opción #1 Recomendada"
-                        : "🧊 Alternativa Directa"}
-                    </span>
-                    <span className="text-xs font-bold text-amber-400">
-                      ★★★★★ {prod.rating} ({prod.reviewsCount})
-                    </span>
-                  </div>
                   <h3 className="mt-3 font-display text-lg font-extrabold text-white leading-snug">
                     {prod.title}
                   </h3>
@@ -395,34 +362,6 @@ export default function AmazonAffiliateBox({
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-5">
-          <div className="flex items-start gap-4">
-            <CategoryIcon type={primaryProduct.categoryType} />
-            <div>
-              <h3 className="font-display text-base sm:text-lg font-extrabold text-slate-900 leading-snug">
-                {primaryProduct.title}
-              </h3>
-              <p className="mt-1 text-xs sm:text-sm text-slate-700 leading-relaxed">
-                {primaryProduct.subtitle}
-              </p>
-              {primaryProduct.specs && (
-                <p className="mt-1.5 text-xs font-semibold text-[#0369a1]">
-                  {primaryProduct.specs.iceAndPrice} ·{" "}
-                  {primaryProduct.specs.capacity} ·{" "}
-                  {primaryProduct.specs.noiseAndUse}
-                </p>
-              )}
-              <div className="mt-2 flex flex-wrap items-center gap-3 text-xs">
-                <span className="font-bold text-amber-600">
-                  ★★★★★ {primaryProduct.rating}/5
-                </span>
-                <span className="text-slate-500 font-medium">
-                  ({primaryProduct.reviewsCount} reseñas)
-                </span>
-                <span className="inline-flex items-center gap-1 font-bold text-emerald-700">
-                  ✓ Disponible con Envío Prime en {shortStore}
-                </span>
-              </div>
             </div>
           </div>
 
@@ -486,31 +425,6 @@ export default function AmazonAffiliateBox({
           </div>
         </div>
 
-        <div className="space-y-3.5">
-          {products.slice(0, 2).map((prod, idx) => {
-            const url = buildAmazonUrl(prod, region);
-            return (
-              <div
-                key={prod.id + idx}
-                className="rounded-xl border border-sky-200/80 bg-white p-3.5 shadow-2xs"
-              >
-                <span className="inline-block rounded-md bg-sky-100 px-2 py-0.5 text-[10px] font-extrabold text-sky-900">
-                  {prod.badge}
-                </span>
-                <h4 className="mt-1.5 font-display text-xs font-extrabold text-slate-900 leading-snug">
-                  {prod.title}
-                </h4>
-                {prod.specs && (
-                  <p className="mt-1 text-[10px] font-semibold text-teal-800">
-                    {prod.specs.capacity} · {prod.specs.noiseAndUse}
-                  </p>
-                )}
-                <div className="mt-1 flex items-center gap-2 text-[11px]">
-                  <span className="font-bold text-amber-600">
-                    ★★★★★ {prod.rating}
-                  </span>
-                  <span className="text-slate-400">({prod.reviewsCount})</span>
-                </div>
                 <a
                   href={url}
                   target="_blank"
@@ -661,15 +575,6 @@ export default function AmazonAffiliateBox({
                 </ul>
               </div>
 
-              <div className="mt-5 pt-4 border-t border-white/10">
-                <div className="flex items-center justify-between text-xs mb-3">
-                  <span className="font-bold text-amber-400">
-                    ★★★★★ {product.rating}/5
-                  </span>
-                  <span className="text-white/60">
-                    {product.reviewsCount} reseñas
-                  </span>
-                </div>
 
                 <a
                   href={url}

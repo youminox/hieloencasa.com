@@ -16,8 +16,6 @@ export interface AmazonProductRecommendation {
   title: string;
   subtitle: string;
   features: string[];
-  rating: string;
-  reviewsCount: string;
   categoryType: AmazonCategoryType;
   specs?: {
     iceAndPrice: string;
@@ -101,11 +99,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Altura de 16.5\" con apertura frontal deslizante que cabe cómodamente bajo alacenas estándar de 18 pulgadas",
       "Wi‑Fi integrado con App SmartHQ para programar horarios matutinos y alertas de descalcificación",
     ],
-    rating: "4.6",
-    reviewsCount: "21.400+",
     categoryType: "nugget-premium",
     specs: {
-      iceAndPrice: "Hielo Nugget Masticable · Gama Alta (~US$549–$629)",
+      iceAndPrice: "Hielo Nugget Masticable · Gama Alta",
       capacity: "38 lb/24h · Cesta 3 lb + Side Tank 0.75 gal",
       dimensions: "13.4\" × 17.5\" × 16.5\" (Cabe bajo 18\")",
       noiseAndUse: "44–46 dB · Ideal Uso Diario Familiar e Iced Coffee",
@@ -126,11 +122,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Diseño moderno con ventana panorámica iluminada y función de autolimpieza automática",
       "Altura contenida de 16.1\" que encaja bajo gabinetes de cocina estándar en Estados Unidos",
     ],
-    rating: "4.5",
-    reviewsCount: "6.800+",
     categoryType: "nugget-premium",
     specs: {
-      iceAndPrice: "Hielo Nugget Crujiente · Gama Media (~US$269–$349)",
+      iceAndPrice: "Hielo Nugget Crujiente · Gama Media",
       capacity: "44 lb/24h · Cesta de 2.6 lb",
       dimensions: "11.8\" × 16.9\" × 16.1\" (Bajo gabinete)",
       noiseAndUse: "45–48 dB · Uso Diario + Reuniones de Fin de Semana",
@@ -141,7 +135,7 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
   },
   EUHOMY_NUGGET_34LB_COMPACT: {
     id: "euhomy-nugget-34lb-compact",
-    badge: "💎 #1 Calidad-Precio en Hielo Nugget Compacto (<US$270)",
+    badge: "💎 #1 Calidad-Precio en Hielo Nugget Compacto",
     title:
       "EUHOMY Countertop Nugget Ice Maker (34–40 lb/24h · Ultracompacta con Autolimpieza)",
     subtitle:
@@ -151,11 +145,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Hielo pebble blando fácil de masticar que enfría al instante iced lattes, smoothies y termos de 40 oz",
       "Programa automático Self-Clean de 1 botón en 15 minutos + pala y cesta desmontable libre de BPA",
     ],
-    rating: "4.6",
-    reviewsCount: "9.200+",
     categoryType: "nugget-compact",
     specs: {
-      iceAndPrice: "Hielo Nugget Suave · Económica (~US$219–$269)",
+      iceAndPrice: "Hielo Nugget Suave · Económica",
       capacity: "34–40 lb/24h · Ciclo rápido de 7–10 min",
       dimensions: "9.6\" × 11.6\" × 13.0\" (Ultracompacta)",
       noiseAndUse: "42–45 dB · Uso Diario Silencioso en Cocina Pequeña",
@@ -176,11 +168,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Operación suave de 43–46 dB con sensor óptico infrarrojo de cesta llena y falta de agua",
       "Carcasa en acero inoxidable antihuellas muy fácil de drenar y mantener",
     ],
-    rating: "4.5",
-    reviewsCount: "5.400+",
     categoryType: "nugget-compact",
     specs: {
-      iceAndPrice: "Hielo Nugget Masticable · ~US$209–$259",
+      iceAndPrice: "Hielo Nugget Masticable · precio variable en Amazon",
       capacity: "33 lb/24h · Flujo continuo desde 8 min",
       dimensions: "8.7\" × 11.3\" × 12.7\" (Súper angosta)",
       noiseAndUse: "43–46 dB · Ideal Uso Diario Parejas y Home Office",
@@ -191,7 +181,7 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
   },
   SILONN_SLIM01_BULLET_26LB: {
     id: "silonn-slim01-bullet-26lb",
-    badge: "🔥 #1 Más Vendida en Amazon EE. UU. · 9 Cubitos en 6 Min (<US$90)",
+    badge: "🔥 #1 Más Vendida en Amazon EE. UU. · 9 Cubitos en 6 Min",
     title:
       "Silonn Countertop Ice Maker SLIM01 (26 lb/24h · 2 Tamaños de Cubito, Asa Portátil y <40 dB)",
     subtitle:
@@ -199,13 +189,11 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
     features: [
       "Selector de 2 tamaños de cubito: Small (enfría rápido botellas) y Large (dura más en vasos y refrescos)",
       "Ultrasilenciosa (~35–41 dB), con ventana superior transparente, asa de transporte y autolimpieza",
-      "Consume apenas ~105 W en marcha (~US$4–$5/mes de electricidad en uso doméstico habitual)",
+      "Consume apenas ~105 W en marcha",
     ],
-    rating: "4.6",
-    reviewsCount: "34.800+",
     categoryType: "bullet-fast",
     specs: {
-      iceAndPrice: "Cubitos Tipo Bala (S/L) · Económica (~US$69–$95)",
+      iceAndPrice: "Cubitos Tipo Bala (S/L) · Económica",
       capacity: "26 lb/24h · 9 cubitos en solo 6 minutos",
       dimensions: "8.7\" × 11.4\" × 11.6\" (Con asa portátil)",
       noiseAndUse: "35–41 dB · Uso Diario Económico y Visitas Rápidas",
@@ -224,13 +212,11 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
     features: [
       "9 cubitos bala por ciclo de 6–8 minutos con reciclaje térmico automático del agua derretida",
       "Asa ergonómica desmontable, cesta de 1.5 lb y soporte lateral para la pala higiénica",
-      "Excelente opción por debajo de US$85 en Amazon con cupones frecuentes",
+      "Excelente opción por debajo de precio variable en Amazon en Amazon con cupones frecuentes",
     ],
-    rating: "4.6",
-    reviewsCount: "19.500+",
     categoryType: "bullet-fast",
     specs: {
-      iceAndPrice: "Cubitos Bala Rápidos · ~US$68–$89",
+      iceAndPrice: "Cubitos Bala Rápidos · precio variable en Amazon",
       capacity: "26 lb/24h · Depósito de 1.5 L",
       dimensions: "8.8\" × 11.6\" × 11.4\" (13.8 lb de peso)",
       noiseAndUse: "38–42 dB · Uso Diario, Verano y Camping/RV",
@@ -251,11 +237,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Carcasa de acero inoxidable fácil de limpiar que armoniza con refrigeradores y cafeteras modernas",
       "Compresor eficiente libre de CFC con sensores automáticos de agua y canasta llena",
     ],
-    rating: "4.5",
-    reviewsCount: "28.100+",
     categoryType: "bullet-fast",
     specs: {
-      iceAndPrice: "Cubitos Bala (2 Tamaños) · ~US$79–$109",
+      iceAndPrice: "Cubitos Bala (2 Tamaños) · precio variable en Amazon",
       capacity: "26 lb/24h · Tanque amplio de 2.2 L",
       dimensions: "9.5\" × 14.1\" × 12.9\"",
       noiseAndUse: "39–43 dB · Uso Diario Confiable en Cocina",
@@ -276,11 +260,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Ajuste digital de grosor del cubo (+/- minutos) y temporizador programable 24 horas en pantalla LCD",
       "Hielo 100 % transparente sin burbujas que no agua el whisky, refrescos ni cócteles de tus invitados",
     ],
-    rating: "4.6",
-    reviewsCount: "11.300+",
     categoryType: "clear-square",
     specs: {
-      iceAndPrice: "Cubo Cuadrado Cristalino · ~US$129–$169",
+      iceAndPrice: "Cubo Cuadrado Cristalino · precio variable en Amazon",
       capacity: "40–45 lb/24h · 24 cubos por tanda (13–18 min)",
       dimensions: "10.0\" × 14.2\" × 14.8\" (Cabe bajo 18\")",
       noiseAndUse: "42–45 dB · Ganadora para Reuniones, Fiestas y Bar",
@@ -301,11 +283,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Entre 28 y 40 lb por día de producción sostenida en acabado acero inoxidable cepillado",
       "Aislamiento grueso y drenaje sencillo para mantenimiento impecable",
     ],
-    rating: "4.5",
-    reviewsCount: "4.900+",
     categoryType: "clear-square",
     specs: {
-      iceAndPrice: "Cubo Gourmet Transparente · ~US$219–$289",
+      iceAndPrice: "Cubo Gourmet Transparente · precio variable en Amazon",
       capacity: "28–40 lb/24h · Cubos macizos individuales",
       dimensions: "11.5\" × 14.5\" × 13.8\"",
       noiseAndUse: "41–44 dB · Ideal Home Bar, Whisky y Cenas",
@@ -326,11 +306,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Produce 33 lb/día de hielo pebble masticable en un cuerpo compacto de solo 13.3\" de altura",
       "Incluye bolsas para congelar hielo extra antes de recibir visitas en casa",
     ],
-    rating: "4.5",
-    reviewsCount: "3.700+",
     categoryType: "nugget-compact",
     specs: {
-      iceAndPrice: "Hielo Nugget Wi‑Fi · ~US$239–$299",
+      iceAndPrice: "Hielo Nugget Wi‑Fi · precio variable en Amazon",
       capacity: "33–35 lb/24h · Programable desde App",
       dimensions: "9.1\" × 11.9\" × 13.3\"",
       noiseAndUse: "43–45 dB · Rutina Matutina Automatizada",
@@ -351,11 +329,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Disuelve depósitos de calcio por agua dura en 1 ciclo Self-Clean devolviendo la velocidad original",
       "Rinde múltiples limpiezas mensuales para mantener el hielo 100 % puro e inodoro",
     ],
-    rating: "4.8",
-    reviewsCount: "18.600+",
     categoryType: "cleaning-accessory",
     specs: {
-      iceAndPrice: "Mantenimiento y Pureza · ~US$14–$36",
+      iceAndPrice: "Mantenimiento y Pureza · precio variable en Amazon",
       capacity: "3 a 6 descalcificaciones profundas por envase",
       dimensions: "Universal para todas las marcas de sobremesa",
       noiseAndUse: "Quita chirridos por cal · Uso Mensual Recomendado",
@@ -376,11 +352,9 @@ export const CATALOG: Record<string, AmazonProductRecommendation> = {
       "Incluye pala ergonómica con escurridor y pinzas dentadas higiénicas para invitados",
       "Complemento perfecto junto con una alfombrilla de silicona antigoteo bajo la máquina",
     ],
-    rating: "4.7",
-    reviewsCount: "12.900+",
     categoryType: "cleaning-accessory",
     specs: {
-      iceAndPrice: "Kit Almacenamiento y Fiesta · ~US$16–$29",
+      iceAndPrice: "Kit Almacenamiento y Fiesta · precio variable en Amazon",
       capacity: "Guarda de 6 a 10 lb de hielo listo para servir",
       dimensions: "11.2\" × 7.5\" × 6.1\" (Apilable en freezer)",
       noiseAndUse: "0 dB · Esencial para Reuniones y Reserva Diaria",
@@ -531,7 +505,7 @@ export function getContextualAmazonProducts(
     };
   }
 
-  // 5. Cubitos bala rápidos, económicas <$100, silenciosas, portátiles
+  // 5. Cubitos bala rápidos, económicas precio variable en Amazon, silenciosas, portátiles
   if (
     category === "mejores-maquinas-cubitos-de-hielo" ||
     text.includes("slim01") ||
@@ -548,7 +522,7 @@ export function getContextualAmazonProducts(
       sectionTitle:
         "Mejores Máquinas de Cubitos Rápidos (6 Minutos) y Silenciosas en Amazon EE. UU.",
       sectionSubtitle:
-        "Ideales para uso diario económico, cocinas pequeñas, departamentos y tandas rápidas por menos de US$100.",
+        "Ideales para uso diario económico, cocinas pequeñas, departamentos y tandas rápidas precio variable en Amazon.",
       products: [
         CATALOG.SILONN_SLIM01_BULLET_26LB,
         CATALOG.EUHOMY_BULLET_26LB_HANDLE,
